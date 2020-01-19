@@ -1,0 +1,46 @@
+.request {
+    position: relative;
+    padding-top: 25px;
+    &__wrapper {
+        margin-top: 71px;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #898989;
+        height: 166px;   
+    }
+    &__img {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid #e93b3b;
+        border-radius: 50px;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+    &__icon {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: -7px;
+        bottom: 0;
+        right: 0;
+    }  
+}
+
+//////MEDIA/////
+@media (max-width: 575px) {
+    .request {
+        &__wrapper {
+            margin-bottom: 60px;
+        }
+        &__img {
+            width: 80px;
+            height: 80px;
+            margin-top: 30px;
+        }
+    }
+}

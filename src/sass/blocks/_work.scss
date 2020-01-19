@@ -1,0 +1,66 @@
+.work {
+    padding-top: 51px;
+    padding-bottom: 57px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 37px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 370px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+    &__subtitle {
+        padding-top: 27px;
+        color: #ec644b;
+        font-family: "Roboto Bold";
+        font-size: 18px;
+        text-align: center;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-family: 'Roboto Light';
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+//////////MEDIA/////////
+@media (min-width: 992px) and (max-width: 1149px) {
+    .work {
+        &__item {
+            max-width: 300px;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .work {
+        &__wrapper {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .work {
+        padding-bottom: 0px;
+        &__wrapper {
+            margin-top: 17px;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            padding-top: 10px;
+        }
+        
+    }
+}

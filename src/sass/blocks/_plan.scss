@@ -1,0 +1,65 @@
+.plan {
+    padding-top: 51px;
+    padding-bottom: 46px;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 33px;
+    }
+    &__item {
+        max-width: 251px;
+        margin-right: 26px;
+        margin-bottom: 10px;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    &__descr {
+        color: #3a3a3a;
+        font-family: 'Roboto Light';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        span {
+            display: block;
+            color: #ec644b;
+            font-family: "Roboto Bold";
+            font-size: 16px;
+        }
+    }
+}
+
+//////////MEDIA/////////
+@media (min-width: 992px) and (max-width: 1149px) {
+    .plan {
+        &__item {
+            max-width: 212px;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .plan {
+        &__item {
+            max-width: 200px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .plan {
+        padding-bottom: 26px;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 13px;
+        }
+        &__item {
+            margin-right: 0;
+
+        }
+    }
+}

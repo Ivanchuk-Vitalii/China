@@ -1,0 +1,71 @@
+.advantages {
+    padding-top: 58px;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 31px;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 36px;  
+    }
+    &__icon {
+        margin-top: 5px;
+        margin-right: 15px;
+        width: 60px;
+        height: 56px;
+    }
+    &__descr {
+        max-width: 450px;
+        font-size: 14px;
+        font-family: "Roboto Light";
+        color: #3a3a3a;
+        span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #ec644b;
+            font-family: "Roboto Bold";
+        }
+    }
+}
+
+//////////MEDIA/////////
+@media (min-width: 992px) and (max-width: 1149px) {
+    .advantages {
+        &__descr {
+            max-width: 350px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .advantages {
+        &__descr {
+            max-width: 289px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .advantages {
+        &__item {
+            margin-bottom: 16px;
+        }
+        &__wrapper {
+            margin-top: 21px;
+        }
+        &__item {
+            flex-direction: column;
+        }
+        &__icon {
+            margin: 0 auto;
+        }
+        &__descr {
+            text-align: justify;
+            span {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.button {
+    width: 160px;
+    height: 45px;
+    background-color: #ec644b;
+    border: none;
+    font-family: 'Roboto Regular';
+    border-radius: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 0.4s all;
+    &:hover {
+        background-color: #f92a2a;
+    }
+    &_more {
+        min-width: 160px;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    &_submit {
+        display: block;
+        width: 180px;
+        height: 45px;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 22.04px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 72px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &_modal {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+    &_popup-form {
+        width: 180px;
+        height: 46px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-left: 16px;
+        background-color: transparent;
+        color: #ec644b;
+        border: 1px solid #ec644b;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 20px #ec644b;
+            background-color: transparent;
+        }
+    }
+}
+
+//////////MEDIA/////////
+@media (max-width: 991px) {
+    .button {
+        &_hover {
+            display: none;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .button {
+        &_submit {
+            width: 150px;
+            height: 35px;
+            top: 107px;
+            left: 50%;
+        }
+    }
+}

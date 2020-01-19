@@ -1,0 +1,35 @@
+.title {
+   color: #2e2e2e;
+   font-family: 'Roboto Regular';
+   font-size: 26px;
+   line-height: 30px;
+   text-transform: uppercase;
+   text-align: center;
+}
+.line {
+   width: 148px;
+   height: 1px;
+   background-color: #ec644b;
+   margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: 17px;
+}
+.organisation {
+   color: #2e2e2e;
+   font-family: 'Roboto Light';
+   font-size: 21px;
+   line-height: 24px;
+   margin: 0 auto;
+   text-align: center;
+   max-width: 879px;
+}
+//////MEDIA//////
+@media (max-width: 575px) {
+   .title {
+      font-size: 22px;
+   }
+   .organisation {
+      font-size: 14px;
+      line-height: 22px;
+   }
+}

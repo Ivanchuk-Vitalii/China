@@ -1,0 +1,68 @@
+.managers {
+    background: url(../image/manadger.jpg) center (center / cover) no-repeat;
+    width: 100%;
+    min-height: 342px;
+    padding-top: 58px;
+    padding-bottom: 75px;
+    &__icon {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 102px;
+        height: 102px;
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+    }
+    &__img {
+       position: absolute;
+       margin: auto;
+       left: -2px;
+       top: 0;
+       bottom: 0;
+       right: 0;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: 'Roboto Bold';
+        font-size: 26px;
+        line-height: 23px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 22px;
+    }
+
+    &__descr {
+        color: #ffffff;
+        font-family: 'Roboto Light';
+        font-size: 19px;
+        line-height: 27px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 984px;
+
+    }
+}
+
+/////MEDIA////
+@media (max-width: 575px) {
+    .managers {
+        padding-top: 38px;
+        padding-bottom: 45px;
+
+        &__icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 23px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
